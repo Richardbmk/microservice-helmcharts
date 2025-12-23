@@ -8,12 +8,12 @@ metadata:
 spec:
   project: craftista
   source:
-    repoURL: https://github.com/nitheeshp-irl/microservice-helmcharts
+    repoURL: https://github.com/Richardbmk/microservice-helmcharts
     targetRevision: main
     path: service-charts/frontend
     helm:
       valueFiles:
-        - "/env/staging/frontend/frontend-values.yaml"
+        - '/env/staging/frontend/frontend-values.yaml'
   destination:
     server: https://kubernetes.default.svc
     namespace: staging
