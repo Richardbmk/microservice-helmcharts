@@ -8,8 +8,9 @@ resources:
   - recommendation.yaml
   - voting.yaml
 
-commonLabels:
-  environment: prod
-  app.kubernetes.io/managed-by: kustomize
+labels:
+  - pairs:
+      environment: prod
+      app.kubernetes.io/managed-by: kustomize
 
 namespace: argocd
